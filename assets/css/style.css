@@ -38,9 +38,13 @@ p {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #525252;
     margin: 0;
+    min-height: 40px;
 }
 
 .social-links li a i {
@@ -69,4 +73,8 @@ footer {
 
 .right {
     width: 25%;
+}
+
+h5 {
+    color: white;
 }
