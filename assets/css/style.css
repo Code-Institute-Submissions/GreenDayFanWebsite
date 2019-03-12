@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin: 100, 200, 300, 400, 500, 600, 700: Exo:100, 200, 300, 400, 500, 600, 700');
+
+h1 {
+    text-align: center;
+    
+}
+
+body {
+    background-color: #6FEB5B;
+}
+
+p {
+    background-color: #999966;
+}
+
+.logo {
+    background: url("../images/Green-Day-Index.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.menuitem {
+    height: 100px;
+    text-align: center;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+}
+
+footer {
+    position: absolute;
+    background-color: #525252;
+    margin: 0;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 75%;
+}
+
+.right {
+    width: 25%;
+}
