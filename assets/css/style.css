@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin: 100, 200, 300, 400, 500, 600, 700: Exo:100, 200, 300, 400, 500, 600, 700');
+/* -------------------------------------------------Heading */
+header {
+    padding-bottom: 0px;
+}
+
+
 
 h1 {
     text-align: center;
 
 }
-
+/* -------------------------------------------------Color */
 body {
     background-color: #E3E3E3;
+}
+/* -------------------------------------------------Paddings/Margins/Text */
+a:hover {
+    text-decoration: none;
 }
 
 p {
@@ -39,9 +49,7 @@ p {
     font-size: 25px;
 }
 
-header {
-    padding-bottom: 0px;
-}
+
 
 body {
     margin-bottom: 100px;
@@ -76,7 +84,9 @@ h5 {
 .menuitem a {
     color: #ffffff;
 }
-/* -----------------------Footer */
+
+/* -------------------------------------------------Footer */
+
 footer {
     position: fixed;
     left: 0;
@@ -91,12 +101,15 @@ footer {
     -o-transition: all 0.30s ease-in-out;
 }
 
-.social-links li a i {
+.social-links {
+    display: inline-block;
+}
+
+.social-links li a i:hover {
     width: 35px;
     height: 35px;
-    border-radius: 50%;
     display: inline-block;
+    border-radius: 50%;
+    background: grey;
     font-size: 15;
-    
-    
 }
