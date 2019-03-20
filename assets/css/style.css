@@ -2,30 +2,22 @@
 
 h1 {
     text-align: center;
-    
+
 }
 
 body {
-    background-color: #C0A832;
+    background-color: #E3E3E3;
 }
 
 p {
     font-size: 16px;
-    background-color: #999966;
-    
+    background-color: #F6F6F8;
+    width: 60%;
     margin-top: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
     margin-left: 25px;
-    
-    padding-left: 10px;
-    padding-top: 5px;
-}
-
-.logo {
-    background: url("../images/Green-Day-Index.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    line-height: 30px;
 }
 
 .center {
@@ -41,10 +33,12 @@ p {
 }
 
 .menuitem span {
+    font: #ffffff;
     display: block;
     width: 100%;
     font-size: 25px;
 }
+
 header {
     padding-bottom: 0px;
 }
@@ -52,24 +46,14 @@ header {
 body {
     margin-bottom: 100px;
 }
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 25px;
-    background-color: #525252;
-    margin: 0;
-    min-height: 40px;
-}
+
 span.a {
     display: inline-block;
     width: 70px;
     height: 50px;
     padding: 5px;
-    
-}
 
+}
 
 .column {
     float: left;
@@ -86,4 +70,33 @@ span.a {
 
 h5 {
     color: white;
+}
+
+
+.menuitem a {
+    color: #ffffff;
+}
+/* -----------------------Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+    background-color: #525252;
+    margin: 0;
+    min-height: 40px;
+    -moz-transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+.social-links li a i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 15;
+    
+    
 }
