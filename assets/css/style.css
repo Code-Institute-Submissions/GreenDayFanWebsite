@@ -10,6 +10,8 @@ h1 {
     text-align: center;
 
 }
+
+
 /* -------------------------------------------------Color */
 body {
     background-color: #E3E3E3;
@@ -19,6 +21,14 @@ a:hover {
     text-decoration: none;
 }
 
+#newSingle h3 {
+    display: inline;
+}
+
+h3 {
+    margin: 10px;
+    padding-top: 50px;    
+}
 p {
     font-size: 16px;
     background-color: #F6F6F8;
@@ -53,6 +63,13 @@ p {
 
 body {
     margin-bottom: 100px;
+}
+
+#wrapper {
+    position: relative;
+    font-size: 16px;
+    background-color: #F6F6F8;
+    
 }
 
 span.a {

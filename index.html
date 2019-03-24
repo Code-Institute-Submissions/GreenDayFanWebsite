@@ -13,40 +13,53 @@
 <body>
     <header class="container-fluid">
         <h1>Green Day</h1>
+
         <!--Navbar displaying the links to the other pages on the website -->
         <div class="row">
             <ul id="nav" class="list-inline clearfix">
                 <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
-                    <a href="index.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#C60021">Home</span></a>
+                    <a href="index.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#C60021"><h2>Home</h2></span></a>
                 </li>
                 <li class="col-xs-6 col-sm-3 ui-menu-color-tours/bookings menuitem">
-                    <a href="tourbookings.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000">Tours/Bookings</span></a>
+                    <a href="tourbookings.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Tours/Bookings</h2></span></a>
                 </li>
 
                 <li class="col-xs-6 col-sm-3 ui-menu-color-songs/videos menuitem">
-                    <a href="" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000">Songs/Videos</span></a>
+                    <a href="" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Songs/Videos</h2></span></a>
                 </li>
                 <li class="col-xs-6 col-sm-3 ui-menu-color-photos menuitem">
-                    <a href="" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000">Photos</span></a>
+                    <a href="" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Photos</h2></span></a>
                 </li>
             </ul>
         </div>
     </header>
-    
-<!--Display an image of the band -->
+
+    <!--Display an image of the band -->
     <section class="fluid-container">
         <div>
             <img src="../assets/images/Green-Day-Home.jpg" alt="Green Day band picture" class="center" width="50%">
         </div>
         <!--Paragraph informing the user what they can do on the website -->
-        <div align="center">
-            <p align="left"> Click the links above to make bookings and see where Green Day perform next live on tour <br> You can also view and listen to old music videos and also check out new material<br> Plus don't miss out what happened at previous shows by checking the Photos
-                page
-                <br> Follow the band on <span style="color:#C60021">Facebook</span> and <span style="color:#C60021">Twitter</span> using the links below<br>And check out more videos about the band on <span style="color:#C60021">Youtube</span> too!!</p>
+
+        <!--open wrapper -->
+        <div align="center" id="wrapper">
+            <div>
+                <!--Hyper Link to new song from the band -->
+                <div id="newSingle">
+                    <h3>Check out the new single 'Bang Bang' by clicking here: </h3>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=wvu2-xQUNQI">
+                        <h3>Play</h3>
+                    </a>
+                </div>
+                <p align="left"> Check the links above to make bookings and see where Green Day perform next live on tour <br> You can also view and listen to old music videos and check out more new material<br> Plus don't miss out what happened at previous shows by checking
+                    the Photos page
+                    <br> Don't forget to follow the band on <span style="color:#C60021">Facebook</span> and <span style="color:#C60021">Twitter</span> using the links below<br>And check out more videos about the band on <span style="color:#C60021">Youtube</span>                    too!!</p>
+            </div>
+            <!--close wrapper -->
         </div>
     </section>
-    
-<!--Links to the bands social pages on Facebook, Twitter and a link to Youtube -->
+
+    <!--Links to the bands social pages on Facebook, Twitter and a link to Youtube -->
     <footer class="container-fluid">
         <div align="center">
             <ul class="social-links">
