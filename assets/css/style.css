@@ -9,16 +9,40 @@ h1 {
     text-align: center;
 
 }
-
+#showsbooked {
+     float: left;
+}
+#contactoptions {
+    float: right;
+}
 /* -------------------------------------------------Body */
-
+/* background image for home page */
+body {
+    background-image: url("../images/GreenDaybackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .shows {
     color: white;
-    background-color: red;
+    background-color: #000000;
     margin: 20px;
     padding: 10px;
 }
+.tourbookingsBG {
+    background-color: #000000;
+}
 
+.tickets {
+    font-size: 20px;
+}
+
+table.tourdatesformat tr td {
+    font-size: 20px;
+}
+#submit {
+    color: black;
+    font-size: 20px;
+}
 /* -------------------------------------------------Footer */
 footer {
     position: fixed;
