@@ -11,10 +11,12 @@ h1 {
 }
 
 /* -------------------------------------------------Body */
-body {
-    background-image: url("../images/GreenDaybackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.shows {
+    color: white;
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
 }
 
 /* -------------------------------------------------Footer */
