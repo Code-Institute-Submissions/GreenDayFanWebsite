@@ -27,13 +27,8 @@ body {
 
 table {
     display: table;
-    border-spacing: 10px;
-    border-color: grey;
-}
-
-
-tourdateslayout tr td {
     font-size: 20px;
+    background-color: lightgrey;
 }
 
 #submit {
