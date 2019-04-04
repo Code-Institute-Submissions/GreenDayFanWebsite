@@ -29,31 +29,34 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <!--Navbar displaying the links to the other pages on the website -->
-        <div class="row" align="center">
-            <ul id="nav" class="list-inline clearfix">
-                <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
-                    <a href="index.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Home</h2></span></a>
-                </li>
-                <li class="col-xs-6 col-sm-3 ui-menu-color-tours/bookings menuitem">
-                    <a href="tourbookings.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#C60021"><h2>Tours/Bookings</h2></span></a>
-                </li>
+    <?php
+    
+    ?>
+        <header class="container-fluid">
+            <!--Navbar displaying the links to the other pages on the website -->
+            <div class="row" align="center">
+                <ul id="nav" class="list-inline clearfix">
+                    <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
+                        <a href="index.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Home</h2></span></a>
+                    </li>
+                    <li class="col-xs-6 col-sm-3 ui-menu-color-tours/bookings menuitem">
+                        <a href="tourbookings.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#C60021"><h2>Tours/Bookings</h2></span></a>
+                    </li>
 
-                <li class="col-xs-6 col-sm-3 ui-menu-color-songs/videos menuitem">
-                    <a href="songsvideos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Songs/Videos</h2></span></a>
-                </li>
-                <li class="col-xs-6 col-sm-3 ui-menu-color-photos menuitem">
-                    <a href="photos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Photos</h2></span></a>
-                </li>
-            </ul>
-        </div>
-    </header>
+                    <li class="col-xs-6 col-sm-3 ui-menu-color-songs/videos menuitem">
+                        <a href="songsvideos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Songs/Videos</h2></span></a>
+                    </li>
+                    <li class="col-xs-6 col-sm-3 ui-menu-color-photos menuitem">
+                        <a href="photos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Photos</h2></span></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
 
-    <section class="fluid-container">
-        <div style="width: 100%">
-            <span style="float:left" class="b">
+        <section class="fluid-container">
+            <div style="width: 100%">
+                <span style="float:left" class="b">
                 <table id="tablelayout" class="tourdateslayout" style="width:100%">
                     <thead>
                     <tr>
@@ -157,47 +160,49 @@
                     </tbody>
                 </table>
             </span>
-            <!--Get user details for when they want to request a show or book tickets -->
-            <span id="contact" class="b">
+                <!--Get user details for when they want to request a show or book tickets -->
+                <span id="contact" class="b">
                 
                 <div class="sticky">
+                <form action="userinfo.php" method="post">
                 <h2 id="contact">Contact for Bookings:</h2>
                 <h3 id="contact">Name:<input type="text" name="name" placeholder="Name"></h3>
                 <h3 id="contact">Email:<input type="email" required name="email" placeholder="Email address"></h3>
                 <h3 id="contact">Request Date:<input type="date" name="daterequest" placeholder="Date Request"></h3>
                 <input type="submit" value="Submit Request" style="float:right" id="submit">
+                </form>
                 </div>
             </span>
-          
-        </div>
-    </section>
 
-<!-- footer -->
-    <footer class="container-fluid">
-        <div align="center">
-            <ul class="social-links">
-                <li class="social-links">
-                    <a target="_blank" href="https://www.facebook.com/GreenDay/">
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="container-fluid">
+            <div align="center">
+                <ul class="social-links">
+                    <li class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/GreenDay/">
                 <i class="fa fa-facebook" aria-hidden="true" align="center"></i>
                 <span class="sr-only">Facebook</span>
                 </a>
 
-                </li>
-                <li class="social-links">
-                    <a target="_blank" href="https://twitter.com/greenday">
+                    </li>
+                    <li class="social-links">
+                        <a target="_blank" href="https://twitter.com/greenday">
                 <i class="fa fa-twitter" aria-hidden="true" align="center"></i>
                 <span class="sr-only">Twitter</span>
                 </a>
-                </li>
-                <li class="social-links">
-                    <a target="_blank" href="https://www.youtube.com/user/greenday">
+                    </li>
+                    <li class="social-links">
+                        <a target="_blank" href="https://www.youtube.com/user/greenday">
                 <i class="fa fa-youtube" aria-hidden="true" align="center"></i>
                 <span class="sr-only">Youtube</span>
                 </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 </body>
 
 </html>
