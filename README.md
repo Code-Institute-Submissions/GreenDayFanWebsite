@@ -21,3 +21,7 @@ Creating this website, I used resources from w3schools , bootstrap, wix and CSS-
 To see what colors would look good on the web and go well together, I looked at websites inlcluding:
 https://www.canva.com/learn/website-color-schemes
 https://coolors.co/ 
+
+While I was building this website, I tested each new funciton as I added it to the page, to make it easier to
+debug any issues that came up when writing code. I tested the website in web broswers Google Chrome and Opera
+to ensure everything was workign correctly.
