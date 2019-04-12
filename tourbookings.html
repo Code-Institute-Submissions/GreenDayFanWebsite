@@ -2,6 +2,10 @@
 <html>
 
 <head>
+    <!--put in meta tag here -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
@@ -31,99 +35,154 @@
 <body>
     <header class="container-fluid">
         <!--Navbar displaying the links to the other pages on the website -->
-        <div class="row" align="center">
+        <div class="col-lg-12 col-md-2 col-sm-1 order-lg-12">
             <ul id="nav" class="list-inline clearfix">
-                <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
-                    <a href="index.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Home</h2></span></a>
+                <li class="col-xs-5 col-sm-2 ui-menu-color-home menuitem">
+                    <a href="index.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#525252"><h3>Home</h3></span></a>
                 </li>
-                <li class="col-xs-6 col-sm-3 ui-menu-color-tours/bookings menuitem">
-                    <a href="tourbookings.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#C60021"><h2>Tours/Bookings</h2></span></a>
+                <li class="col-xs-5 col-sm-2 ui-menu-color-tours/bookings menuitem">
+                    <a href="tourbookings.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#C60021"><h3>Tours/Bookings</h3></span></a>
                 </li>
-
-                <li class="col-xs-6 col-sm-3 ui-menu-color-songs/videos menuitem">
-                    <a href="songsvideos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Songs/Videos</h2></span></a>
+                <li class="col-xs-5 col-sm-2 ui-menu-color-songs/videos menuitem">
+                    <a href="songsvideos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#525252"><h3>Songs/Videos</h3></span></a>
                 </li>
-                <li class="col-xs-6 col-sm-3 ui-menu-color-photos menuitem">
-                    <a href="photos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#000000"><h2>Photos</h2></span></a>
+                <li class="col-xs-5 col-sm-2 ui-menu-color-photos menuitem">
+                    <a href="photos.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#525252"><h3>Photos</h3></span></a>
+                </li>
+                <li class="col-xs-5 col-sm-2 ui-menu-color-contact menuitem">
+                    <a href="contact.html" class="hvr-wobble-bottom"><i aria-hidden="true"></i><span style="color:#525252"><h3>Contact</h3></span></a>
                 </li>
             </ul>
         </div>
+
     </header>
 
     <!--display concert dates -->
-    <section class="fluid-container">
-        <div style="width: 100%; overflow:auto;">
-            <span style="float:left" class="b">
-                <h3 align="right">Upcoming Shows</h3>
-                <table id="tablelayout" class="tourdateslayout" style="width:100%">
-                    
-                    <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Location</th>
-                        <th>Venue</th>
-                        <th>Tickets</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>02/05/2019</td>
-                        <td>Dublin</td>
-                        <td>O2 Arena</td>
-                        <td>Sold Out</td>
-                    </tr>
-                    <tr>
-                        <td>07/05/2019</td>
-                        <td>London</td>
-                        <td>Leeds Festival</td>
-                        <td>Sold Out</td>
-                    </tr>
-                    <tr>
-                        <td>12/05/2019</td>
-                        <td>Dublin</td>
-                        <td>O2 Arena</td>
-                        <td>Sold Out</td>
-                    </tr>
-                    <tr>
-                        <td>16/05/2019</td>
-                        <td>Lodon</td>
-                        <td>Leeds Festival</td>
-                        <td>Sold Out</td>
-                    </tr>
-                    <tr>
-                        <td>22/05/2019</td>
-                        <td>Dublin</td>
-                        <td>O2 Arena</td>
-                        <td>Sold Out</td>
-                    </tr>
-                       <tr>
-                        <td>25/05/2019</td>
-                        <td>Dublin</td>
-                        <td>O2 Arena</td>
-                        <td>Sold Out</td>
-                    </tr>
-                    
-                    </tbody>
-                </table>
-            </span>
-            <!--Get user details for when they want to request a show or book tickets -->
-            <span id="contact" class="b" align="center">
-                    <form action="userinfo.php" method="post" target="_blank">
-                       <h3 align="center">Book Show</h3>
-                       <label for="name">Name:</label>
-                       <input type="text" name="name" id="name" required>
-                       <br>
-                       <label for="email">Email:</label>
-                       <input type="email" name="email" id="email" required>
-                        <br>                       
-                       <label for="date">Date:</label>
-                       <input type="date" name="date" id="date" required>
-                       <br>
-                       <input type="submit" name="send" value="Send Request">
-                    </form>
-            </span>
+    <section class="tourdates-secton">
+        <div class="fluid-container tourdates-container">
+            <h3 align="center">Tour Dates</h3>
+            <!-- show tour dates in div tags -->
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <a href="https://frontend-dev-milestone-project-shanekeegan.c9users.io/contact.html"><button type="button">Tickets</button></a>
+                </div>
+            </div>
 
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <h5>Sold Out</h5>
+                </div>
+            </div>
+
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <a href="https://frontend-dev-milestone-project-shanekeegan.c9users.io/contact.html"><button type="button">click</button></a>
+                </div>
+            </div>
+
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <a href="https://frontend-dev-milestone-project-shanekeegan.c9users.io/contact.html"><button type="button">click</button></a>
+                </div>
+            </div>
+            
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <a href="https://frontend-dev-milestone-project-shanekeegan.c9users.io/contact.html"><button type="button">Tickets</button></a>
+                </div>
+            </div>
+
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <h5>Sold Out</h5>
+                </div>
+            </div>
+
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <a href="https://frontend-dev-milestone-project-shanekeegan.c9users.io/contact.html"><button type="button">click</button></a>
+                </div>
+            </div>
+
+            <div id="datesbackgroundcolor" class="row event-row">
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    02/05/2019
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-stadium">
+                    O2 Arena
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-location">
+                    Dublin
+                </div>
+                <div clas="col-lg-2 col-md-6 col-sm-12 order-lg-1 order-md-1 event-date">
+                    <a href="https://frontend-dev-milestone-project-shanekeegan.c9users.io/contact.html"><button type="button">click</button></a>
+                </div>
+            </div>
         </div>
+
     </section>
 
     <!-- footer displaying links to social pages facebook and twitter and youtube -->
@@ -132,19 +191,19 @@
             <ul class="social-links">
                 <li class="social-links">
                     <a target="_blank" href="https://www.facebook.com/GreenDay/">
-                            <i class="fa fa-facebook" aria-hidden="true" align="center"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                 </li>
                 <li class="social-links">
                     <a target="_blank" href="https://twitter.com/greenday">
-                            <i class="fa fa-twitter" aria-hidden="true" align="center"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>    
                         </a>
                 </li>
                 <li class="social-links">
                     <a target="_blank" href="https://www.youtube.com/user/greenday">
-                            <i class="fa fa-youtube" aria-hidden="true" align="center"></i>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">Youtube</span>
                         </a>
                 </li>
